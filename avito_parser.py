@@ -32,8 +32,3 @@ def scrape_avito_rental_prices(url):
     return prices
 
 
-# Пример использования
-url = 'https://www.avito.ru/all/kvartiry/sdam/na_dlitelnyy_srok/studii-ASgBAQICAkSSA8gQ8AeQUgFAzAgUjFk?context=H4sIAAAAAAAA_0q0MrSqLraysFJKK8rPDUhMT1WyLrYytlLKTSxQsq4FBAAA__8Xe4TEHwAAAA&map=eyJzZWFyY2hBcmVhIjp7ImxhdEJvdHRvbSI6NTUuNjg5NDM0MTI4Mzg0MjE0LCJsYXRUb3AiOjU1LjcyNDYzOTU2NDkyNjk3NCwibG9uTGVmdCI6MzcuNTc1NjgwNjE4Mjg2MDg2LCJsb25SaWdodCI6MzcuNjk3MjE2ODczMTY4OTA1fSwiem9vbSI6MTR9'  # Пример URL, нужно заменить на актуальный
-prices = scrape_avito_rental_prices(url)
-for i, price in enumerate(prices):
-    print(f"Цена {i + 1}-й студии: {price} руб.")
